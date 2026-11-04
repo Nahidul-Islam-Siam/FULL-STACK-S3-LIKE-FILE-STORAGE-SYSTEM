@@ -4,9 +4,9 @@
   "private": true,
   "type": "commonjs",
   "scripts": {
-    "dev": "node api.js && tsx watch src/server.ts",
-    "build": "node api.js && tsc",
-    "start": "node api.js && node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "tsx src/scripts/initDb.ts && prisma generate",
     "prisma:deploy": "prisma migrate deploy"
